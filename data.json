@@ -1,0 +1,49 @@
+{
+    "projects" : [
+        {
+            "id": "0",
+            "project_name": "Random Quote Generator",
+            "description": "The application, 'Random Quote Generator', prints translated quotes from a Japanese psychological thriller series named Psycho Pass. Each quote presented on the webpage reveals the source, citation, year of utterance, season and episode of when the quote was recorded.",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link": "https://chiyuuarchive.github.io/unit1_random_quote_generator/",
+            "github_link": "https://github.com/chiyuuarchive/unit1_random_quote_generator.git",
+            "image_urls": ["/images/proj1_small.jpg", "/images/proj1_big.jpg"]
+        },
+        {
+            "id": "1",
+            "project_name": "Data Pagination and Filtering",
+            "description": "The application 'Data Pagination and Filtering' generates a webpage of students in card template forms with personal information(first name, last name, email, and a profile picture) and a date of registration. The aim of this project is to showcase pagination and filtering through vanilla javascript. The users are able to navigate through the presentation by the bottom page number buttons and can search for students by typing in letters on the top-left search bar.",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link": "https://chiyuuarchive.github.io/unit2_data_pagination_and_filtering/",
+            "github_link": "https://github.com/chiyuuarchive/unit2_data_pagination_and_filtering.git",
+            "image_urls": ["/images/proj2_small.jpg", "/images/proj2_big.jpg"]
+        },
+        {
+            "id": "2",
+            "project_name": "Interactive Form",
+            "description": "This application showcases an interactive form that allows the users to input their basic info (name, email address and job role), select their t-shirt and activities they wish to attend. Using regex, the form will also be able to validate the information that the users pass in.",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link": "https://chiyuuarchive.github.io/unit3_interactive_form/",
+            "github_link": "https://github.com/chiyuuarchive/unit3_interactive_form.git",
+            "image_urls": ["/images/proj3_small.jpg", "/images/proj3_big1.jpg", "/images/proj3_big2.jpg", "/images/proj3_big3.jpg"]
+        },
+        {
+            "id": "3",
+            "project_name": "OOP Game Show App",
+            "description": "Object-oriented programming (aka OOP) has been applied to this project to develop the 'Phrase Hunter' game. This is summarized by the three JavaScript files; 'app.js', 'Game.js' and 'Phrase.js'. The application selects one of the stored phrases by random in which the player will attempt to guess the phrase by using the onscreen keyboard or their own keyboard.",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link": " https://chiyuuarchive.github.io/unit4_oop_game_show_app/",
+            "github_link": "https://github.com/chiyuuarchive/unit4_oop_game_show_app.git",
+            "image_urls": ["/images/proj4_small.jpg", "/images/proj4_big1.jpg", "/images/proj4_big2.jpg", "/images/proj4_big3.jpg"]
+        },
+        {
+            "id": "4",
+            "project_name": "Random Quote Generator",
+            "description": "The application, 'Random Quote Generator', prints translated quotes from a Japanese psychological thriller series named Psycho Pass. Each quote presented on the webpage reveals the source, citation, year of utterance, season and episode of when the quote was recorded.",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link": "https://chiyuuarchive.github.io/unit5_public_api_requests/",
+            "github_link": "https://github.com/chiyuuarchive/unit5_public_api_requests.git",
+            "image_urls": ["/images/proj5_small.jpg", "/images/proj5_big1.jpg", "/images/proj5_big2.jpg", "/images/proj5_big3.jpg"]
+        }  
+    ]
+}
