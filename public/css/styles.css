@@ -28,7 +28,7 @@ body {
 }
 
 article {
-  background: #ddf2fd;
+  background: #f1faff;
 }
 
 h1,h2,h3,h4,h5,p{
@@ -271,6 +271,10 @@ article.portfolio-intro a{
 /* 
   About and project pages styles 
 */
+div.project-img-box {
+  padding-top: 5px;
+}
+
 .about-intro-box p,
 .project-info-box p {
   margin-top: 15px;
