@@ -47,6 +47,7 @@ app.get("/error", (req, res) => {
     const err = new Error();
     err.message = "Internal Server Error"
     err.status = 500;
+    console.log(err.message);
     res.render("error", {err})
 });
 
@@ -64,6 +65,7 @@ app.get("/project/:id", (req, res, next) => {
         const err = new Error();
         err.status = 404;
         err.message = "Page not found"
+        console.log(err.message);
         next(err);
     }
 });
@@ -85,6 +87,7 @@ app.get("/:id", (req, res, next) => {
         const err = new Error();
         err.status = 404;
         err.message = "Page not found"
+        console.log(err.message);
         res.render("page-not-found", {err});
     }
 })
