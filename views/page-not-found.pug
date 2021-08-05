@@ -1,0 +1,8 @@
+extends layout.pug
+
+block content
+    article.portfolio-intro
+        h1= `${err.status} ` + err.message 
+        br
+        p It seems the page you have requested does not exist. Please refer to the below text to return back to the home page. 
+        a(href='/') Home Page

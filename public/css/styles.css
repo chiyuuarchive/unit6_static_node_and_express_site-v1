@@ -22,13 +22,13 @@ body {
   line-height: 1.5;
   color: #0a0a0a;
   background: #fefefe;
-  background: #000;
+  background: rgb(30, 30, 30);
   transform: translateX(0px);
   transition: all 0.4s ease-out;
 }
 
 article {
-  background: #fefefe;
+  background: #ddf2fd;
 }
 
 h1,h2,h3,h4,h5,p{
@@ -63,7 +63,7 @@ a {
   min-width: 320px;
   height: 100%;
   min-height: 100%;
-  background: #fefefe;
+  background: #f1faff;
 }
 
 .flex-row-wrap {
@@ -82,7 +82,7 @@ a {
   width: 100%;
   max-width: 1200px;
   padding: 40px 50px 30px;
-  background: #fefefe;
+  background: #f1faff;
   border-bottom: 1px solid #eaeaea;
 }
 
@@ -108,6 +108,7 @@ a {
 nav {
   width: 100%;
   padding: 20px;
+  background:#f1faff;
   border-bottom: 1px solid #eaeaea;
 }
 
@@ -137,7 +138,7 @@ nav a span {
   height: 100%;
   min-height: 100%;
   padding: 20px;
-  background: #000;
+  background: rgb(30, 30, 30);
 }
 
 .sidebar-info-box {
@@ -167,7 +168,7 @@ nav a span {
   text-rendering: optimizeLegibility;
   line-height: 1.6;
   font-size: 14px;
-  color: #999
+  color: rgb(201, 201, 201)
 }
 
 .sidebar a {
@@ -176,7 +177,7 @@ nav a span {
   font-size: 13px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: #555;
+  color: rgb(88, 103, 109);
 }
 
 .header {
@@ -222,6 +223,10 @@ nav a span {
 /*
   Home page styles
 */
+article.portfolio-intro a{
+  font-size: 115%;
+}
+
 .portfolio-intro {
   max-width: 1200px;
   padding: 40px 50px 30px;
@@ -237,7 +242,7 @@ nav a span {
   text-rendering: optimizeLegibility;
   font-size: 125%;
   margin: 0 auto;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
   border-bottom: 1px solid #eaeaea;
 }
 
@@ -268,12 +273,13 @@ nav a span {
 */
 .about-intro-box p,
 .project-info-box p {
+  margin-top: 15px;
   font-size: 125%;
 }
 
 .about-bio p {
   font-size: 15px;
-  padding-top: 40px;
+  padding-top: 25px;
 }
 
 .skills-contact-box ul {

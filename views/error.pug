@@ -1,0 +1,8 @@
+extends layout.pug
+
+block content
+    article.portfolio-intro
+        h1= `${err.status} ` + err.message 
+        br
+        p This is a custom-made error page displayed if the user requests the URL link "http://localhost:3000/error". If this page has successfully loaded it means that server is working as intended. Please refer to below link to return back to the home page.
+        a(href='/') Home Page

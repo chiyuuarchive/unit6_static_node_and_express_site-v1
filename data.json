@@ -7,7 +7,8 @@
             "technologies": ["JavaScript", "HTML", "CSS"],
             "live_link": "https://chiyuuarchive.github.io/unit1_random_quote_generator/",
             "github_link": "https://github.com/chiyuuarchive/unit1_random_quote_generator.git",
-            "image_urls": ["/images/proj1_small.jpg", "/images/proj1_big.jpg"]
+            "image_urls": ["/static/images/proj1_big1.jpg", "/static/images/proj1_big2.jpg"],
+            "profileImg_url": "/static/images/proj1_small.jpg"
         },
         {
             "id": "1",
@@ -16,7 +17,8 @@
             "technologies": ["JavaScript", "HTML", "CSS"],
             "live_link": "https://chiyuuarchive.github.io/unit2_data_pagination_and_filtering/",
             "github_link": "https://github.com/chiyuuarchive/unit2_data_pagination_and_filtering.git",
-            "image_urls": ["/images/proj2_small.jpg", "/images/proj2_big.jpg"]
+            "image_urls": ["/static/images/proj2_big1.jpg", "/static/images/proj2_big2.jpg"],
+            "profileImg_url": "/static/images/proj2_small.jpg"
         },
         {
             "id": "2",
@@ -25,7 +27,8 @@
             "technologies": ["JavaScript", "HTML", "CSS"],
             "live_link": "https://chiyuuarchive.github.io/unit3_interactive_form/",
             "github_link": "https://github.com/chiyuuarchive/unit3_interactive_form.git",
-            "image_urls": ["/images/proj3_small.jpg", "/images/proj3_big1.jpg", "/images/proj3_big2.jpg", "/images/proj3_big3.jpg"]
+            "image_urls": ["/static/images/proj3_big1.jpg", "/static/images/proj3_big2.jpg", "/static/images/proj3_big3.jpg"],
+            "profileImg_url": "/static/images/proj3_small.jpg"
         },
         {
             "id": "3",
@@ -34,16 +37,34 @@
             "technologies": ["JavaScript", "HTML", "CSS"],
             "live_link": " https://chiyuuarchive.github.io/unit4_oop_game_show_app/",
             "github_link": "https://github.com/chiyuuarchive/unit4_oop_game_show_app.git",
-            "image_urls": ["/images/proj4_small.jpg", "/images/proj4_big1.jpg", "/images/proj4_big2.jpg", "/images/proj4_big3.jpg"]
+            "image_urls": ["/static/images/proj4_big1.jpg", "/static/images/proj4_big2.jpg", "/static/images/proj4_big3.jpg"],
+            "profileImg_url": "/static/images/proj4_small.jpg"
         },
         {
             "id": "4",
-            "project_name": "Random Quote Generator",
-            "description": "The application, 'Random Quote Generator', prints translated quotes from a Japanese psychological thriller series named Psycho Pass. Each quote presented on the webpage reveals the source, citation, year of utterance, season and episode of when the quote was recorded.",
+            "project_name": "Public API Requests",
+            "description": "In this project, a random person generator and image generator API have been used to develop an employee directory. The javascript file 'script.js' features asynchrounous JavaScript programming mostly concerning with handling of async operations with promises. 12 employees are randomely generated in this directory and the user are able to search and generate modal windows of a selected employee.",
             "technologies": ["JavaScript", "HTML", "CSS"],
             "live_link": "https://chiyuuarchive.github.io/unit5_public_api_requests/",
             "github_link": "https://github.com/chiyuuarchive/unit5_public_api_requests.git",
-            "image_urls": ["/images/proj5_small.jpg", "/images/proj5_big1.jpg", "/images/proj5_big2.jpg", "/images/proj5_big3.jpg"]
+            "image_urls": ["/static/images/proj5_big1.jpg", "/static/images/proj5_big2.jpg", "/static/images/proj5_big3.jpg"],
+            "profileImg_url": "/static/images/proj5_small.jpg"
         }  
-    ]
+    ],
+    "personal" : {
+        "name": "D. Kuan",
+        "title": "Game and JavaScript Developer",
+        "phone": "072 760 12 22",
+        "mail": "chiyuuarchive@gmail.com",
+        "linkedIn_url": "https://jp.linkedin.com/error?_l=en_US",
+        "github_url": "https://github.com/chiyuuarchive",
+        "twitter_url": "https://twitter.com/dontexist404",
+        "skills": ["HTML", "CSS", "JavaScript", "Git and GitHub", "VS Code", "Object-oriented programming (OOP)", "Fetch and Public APIs", "Node.js", "Express", "Pug", "C#", "Blender"],
+        "bio": "This is my elevator pitch. It is the elevator pitch to end all elevator pitches. Your mind is blown. Your mortal brain can scarcely process how well my prior experience maps to your open dev position."
+
+
+    }
+
+
+
 }

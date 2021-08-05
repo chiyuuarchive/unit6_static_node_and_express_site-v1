@@ -1,0 +1,22 @@
+/* 
+  Hover effects 
+*/
+div.cell img.thumbnail:hover {
+    box-shadow: 3px 3px 3px skyblue;
+  }
+  
+a.btn-link:hover {
+    color: rgb(241, 66, 148);
+  }
+
+nav.nav a:hover {
+    color: rgb(241, 66, 148);
+}
+
+div.cell h5:hover{
+    color: rgb(241, 66, 148);
+}
+
+div.dev-intro-box a:hover{
+    color: rgb(241, 66, 148);
+}
