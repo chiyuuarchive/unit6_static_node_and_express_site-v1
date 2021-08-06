@@ -43,7 +43,7 @@ app.get("/error", (req, res) => {
     // Log out custom error handler indication
     console.log('Custom error route called');
 
-    // Constrouct a new error object
+    // Construct a new error object
     const err = new Error();
     err.message = "Internal Server Error"
     err.status = 500;
@@ -65,7 +65,6 @@ app.get("/project/:id", (req, res, next) => {
         const err = new Error();
         err.status = 404;
         err.message = "Page not found"
-        console.log(err.message);
         next(err);
     }
 });
@@ -87,8 +86,11 @@ app.get("/:id", (req, res, next) => {
         const err = new Error();
         err.status = 404;
         err.message = "Page not found"
-        console.log(err.message);
         res.render("page-not-found", {err});
+
+        if(req.params.id==="noroute") {
+            console.log(err.message);
+        }
     }
 })
 
@@ -96,6 +98,6 @@ app.get("/:id", (req, res, next) => {
 /*
 * Assign a port for the Express server
 */
-app.listen(3000, () => {
+app.listen(3001, () => {
     console.log('Server listening on port 3000');
   });
