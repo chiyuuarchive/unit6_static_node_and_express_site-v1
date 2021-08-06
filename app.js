@@ -40,14 +40,11 @@ app.get("/about", (req, res) => {
 
 // Render the "error" page
 app.get("/error", (req, res) => {
-    // Log out custom error handler indication
-    console.log('Custom error route called');
-
     // Construct a new error object
     const err = new Error();
     err.message = "Internal Server Error"
     err.status = 500;
-    console.log(err.message);
+    console.log('Custom error route called:', `${err.message} (${err.status})`);
     res.render("error", {err})
 });
 
@@ -73,26 +70,18 @@ app.get("/project/:id", (req, res, next) => {
 /*
 * Error handling
 */
+// If get requests can't be fulfilled. Create the error 404 and pass it to the next error handler
+app.use((req, res, next) => {
+    const err = new Error();
+    err.status = 404;
+    err.message = "Page not found"
+    next(err);
+})
+
 // Render the "page-not-found" page (404 Error handling)
 app.use((err, req, res, next) => {
     console.log(err.message);
     res.render("page-not-found", {err});
-})
-
-// If undefined URL links are requested, render the "page-not-found" template.
-app.get("/:id", (req, res) => {
-    const input = req.params.id;
-    if(/.+/.test(input)) {
-        const err = new Error();
-        err.status = 404;
-        err.message = "Page not found"
-        res.render("page-not-found", {err});
-
-        // If the URL contains "noroute", print the err.message
-        if(req.params.id==="noroute") {
-            console.log(err.message);
-        }
-    }
 })
 
 
