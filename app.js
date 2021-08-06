@@ -80,7 +80,7 @@ app.use((err, req, res, next) => {
 })
 
 // If undefined URL links are requested, render the "page-not-found" template.
-app.get("/:id", (req, res, next) => {
+app.get("/:id", (req, res) => {
     const input = req.params.id;
     if(/.+/.test(input)) {
         const err = new Error();
