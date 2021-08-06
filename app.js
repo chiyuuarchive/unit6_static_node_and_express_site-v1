@@ -79,7 +79,7 @@ app.use((err, req, res, next) => {
     res.render("page-not-found", {err});
 })
 
-// Redirect to index page if server receives "undefined" URL links. If "noroute" is requested, render the "page-not-found" template.
+// If undefined URL links are requested, render the "page-not-found" template.
 app.get("/:id", (req, res, next) => {
     const input = req.params.id;
     if(/.+/.test(input)) {
@@ -88,6 +88,7 @@ app.get("/:id", (req, res, next) => {
         err.message = "Page not found"
         res.render("page-not-found", {err});
 
+        // If the URL contains "noroute", print the err.message
         if(req.params.id==="noroute") {
             console.log(err.message);
         }
@@ -98,6 +99,6 @@ app.get("/:id", (req, res, next) => {
 /*
 * Assign a port for the Express server
 */
-app.listen(3000, () => {
+app.listen(3001, () => {
     console.log('Server listening on port 3000');
   });
