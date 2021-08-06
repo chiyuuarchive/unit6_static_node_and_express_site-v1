@@ -38,7 +38,7 @@ app.get("/about", (req, res) => {
     res.render("about", {personal});
 });
 
-// If the a get request with "/error" is requested, construct a new error object and pass it to next error handler
+// If the get request with "/error" is requested, construct a new error object and pass it to next error handler
 app.get("/error", (req, res, next) => {
     const err = new Error();
     err.message = "Internal Server Error"
