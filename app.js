@@ -38,14 +38,12 @@ app.get("/about", (req, res) => {
     res.render("about", {personal});
 });
 
-// Render the "error" page
-app.get("/error", (req, res) => {
-    // Construct a new error object
+// If the a get request with "/error" is requested, construct a new error object and pass it to next error handler
+app.get("/error", (req, res, next) => {
     const err = new Error();
     err.message = "Internal Server Error"
     err.status = 500;
-    console.log('Custom error route called:', `${err.message} (${err.status})`);
-    res.render("error", {err})
+    next(err);    
 });
 
 // Render the "project" page
@@ -53,12 +51,11 @@ app.get("/project/:id", (req, res, next) => {
     const projectNum = +req.params.id;
 
     if(projects[projectNum]) {
-        console.log("A project object is being passed to the project.pug");
         const project = projects[projectNum];
         res.render("project", {project});
     }
     else {
-        console.log("There is no project with this id");
+        console.log();
         const err = new Error();
         err.status = 404;
         err.message = "Page not found"
@@ -78,16 +75,25 @@ app.use((req, res, next) => {
     next(err);
 })
 
-// Render the "page-not-found" page (404 Error handling)
+// Error handler
 app.use((err, req, res, next) => {
-    console.log(err.message);
-    res.render("page-not-found", {err});
+    if (err.status === 404) {
+        console.log(`${err.message} (${err.status})`);
+        // Render the "page-not-found" template
+        res.render("page-not-found", {err});
+    }
+
+    if(err.status === 500) {
+        console.log('Custom error route called:', `${err.message} (${err.status})`);
+        // Render the custom error template
+        res.render("error", {err})
+    }
 })
 
 
 /*
 * Assign a port for the Express server
 */
-app.listen(3000, () => {
+app.listen(3001, () => {
     console.log('Server listening on port 3000');
   });
