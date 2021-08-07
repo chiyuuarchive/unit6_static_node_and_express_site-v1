@@ -9,4 +9,11 @@ The aim of this project is to showcase some of the techdegree projects that I've
 - Sidebar and body background color changed from #0a0a0a to rgb(30, 30, 30). Refer to line 25 and 140 in styles.jss
 
 
-Contact: If you have questions, ideas or suggestions please contact chiyuuarchive@gmail.com.
+To run this app, please install the necessary files at https://github.com/chiyuuarchive/unit6_static_node_and_express_site-v1.git. Then, follow the below steps to set the app up:
+
+1) Extract the project files from the zip folder.
+2) Run the files with a code editor (e.g. VS code)
+3) Open the terminal and type "npm install" followed by "npm start" to install all the neccessary app dependencies.
+4) View the project by typing "http://localhost:3000/" to your browser.
+
+If you have questions, ideas or suggestions please feel free to contact chiyuuarchive@gmail.com.

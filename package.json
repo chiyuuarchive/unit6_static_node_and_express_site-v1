@@ -10,7 +10,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "test",
-    "start": "nodemon ./app.js"
+    "start": "node ./app.js"
   },
   "author": "Dick Kuan",
   "license": "ISC"
